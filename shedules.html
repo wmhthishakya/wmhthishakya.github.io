@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Template Mo">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <title>SHEDULES</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/itpalazestyles.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/lightbox.css">
+
+  </head>
+
+<body>
+
+   
+
+  <!-- Sub Header -->
+  <div class="sub-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-sm-8">
+          <div class="left-content">
+            <p id="greetingMessage"></p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-4">
+          <div class="right-content">
+            <p id="date"></p>
+            <p id="time"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Boot logo container -->
+    <div class="boot-logo">
+      <img src="assets/images/ZKZg.gif" alt="Boot Logo">
+    </div>
+
+<!-- ***** Header Area Start ***** -->
+<header class="header-area header-sticky">
+  <div class="container">
+      <div class="row">
+          <div class="col-12">
+              <nav class="main-nav">
+                  <!-- ***** Logo Start ***** -->
+                  <a href="index.html" class="logo">it_Palaze</a>
+                  <!-- ***** Logo End ***** -->
+                  <!-- ***** Menu Start ***** -->
+                  <ul class="nav">
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href="courses.html">Courses</a></li>
+                      <li><a href="shedules.html" class="active">Shedules</a></li>
+                      <li><a href="Registration.html">Registration</a></li>
+                      <li><a href="curriculums.html">Curriculams</a></li>
+                      <li class="has-sub">
+                          <a href="javascript:void(0)">Exam Papers</a>
+                          <ul class="sub-menu">
+                              <li><a href="#">Past Papers</a></li>
+                              <li><a href="#">Modal Papers</a></li>
+                              <li><a href="#">Province Papers</a></li>
+                              <li><a href="#">School Papers</a></li>
+                          </ul>
+                      </li>
+                      <li><a href="myaccount.html">My Account</a></li> 
+                  </ul>        
+                  <a class='menu-trigger'>
+                      <span>Menu</span>
+                  </a>
+                  <!-- ***** Menu End ***** -->
+              </nav>
+          </div>
+      </div>
+  </div>
+</header>
+<!-- ***** Header Area End ***** -->
+
+  <section class="heading-page header-text" id="top">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h6>Here are our shedules</h6>
+          <h2>Course shedule</h2>
+        </div>
+        <div class="meet-container">
+          <img src="assets/images/meet.png" class="meet" alt="Meet Image">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="meetings-page" id="meetings">
+    <p class="access">Class schedules and fees are as follows.</p>
+    <div class="accesscontainer">
+      <div class="medium"><span class="box">EM</span> - English Medium</div>
+      <div class="medium"><span class="box">SM</span> - Sinhala Medium</div>
+    </div>
+    
+    
+  
+    <div class="image-row">
+      <img class="image" src="/assets/images/timetable/grade 06.png" alt="Image 1">
+      <img class="image" src="/assets/images/timetable/grade 07.png" alt="Image 2">
+      <img class="image" src="/assets/images/timetable/grade 08.png" alt="Image 3">
+  </div>
+  <div class="image-row">
+      <img class="image" src="/assets/images/timetable/grade 09.png" alt="Image 4">
+      <img class="image" src="/assets/images/timetable/grade 10.png" alt="Image 1">
+      <img class="image" src="/assets/images/timetable/grade 11.png" alt="Image 2">
+  </div>
+
+
+  <div class="footer">
+    <p>© 2024 | IT PALAZE | All Rights Reserved. 
+        <br>Design by <a href="#" target="_self">Thish.</a></p>
+  </div>
+  </section>
+
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/isotope.min.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/lightbox.js"></script>
+    <script src="assets/js/tabs.js"></script>
+    <script src="assets/js/isotope.js"></script>
+    <script src="assets/js/video.js"></script>
+    <script src="assets/js/slick-slider.js"></script>
+    <script src="assets/js/custom.js"></script>
+    
+
+    <!--Added-->
+    <script>
+      function setGreeting() {
+    const greetingMessage = document.getElementById('greetingMessage');
+    const currentHour = new Date().getHours();
+
+    if (currentHour >= 0 && currentHour < 12) {
+        greetingMessage.textContent = '☀️ Good Morning, Cyber Heroes!';
+    } else if (currentHour >= 12 && currentHour < 17) {
+        greetingMessage.textContent = '☀️ Good Afternoon, Cyber Heroes!';
+    } else {
+        greetingMessage.textContent = '🌕 Good Evening, Cyber Heroes!';
+    }
+}
+
+// Call setGreeting on page load
+window.onload = setGreeting;
+
+    </script>
+    <script>
+      function updateDate() {
+          const now = new Date();
+          const dateElement = document.getElementById('date');
+          
+          const options = { 
+              weekday: 'long', 
+              year: 'numeric', 
+              month: 'long', 
+              day: 'numeric'
+          };
+
+          dateElement.textContent = now.toLocaleDateString('en-US', options);
+      }
+
+      // Call the function once to display the initial date
+      updateDate();
+  </script>
+  <script>
+    function updateTime() {
+        const now = new Date();
+        const timeElement = document.getElementById('time');
+        
+        const options = { 
+            hour: 'numeric', 
+            minute: 'numeric', 
+            second: 'numeric',
+            hour12: true // Use 12-hour time format with AM/PM
+        };
+
+        timeElement.textContent = now.toLocaleTimeString('en-US', options);
+    }
+
+    // Call the function once to display the initial time
+    updateTime();
+
+    // Set up a timer to update the time every second
+    setInterval(updateTime, 1000);
+</script>
+<script>
+  // Hide boot logo when the window is loaded
+window.addEventListener('load', function() {
+  var bootLogo = document.querySelector('.boot-logo');
+  bootLogo.style.display = 'none';
+});
+
+</script>
+</body>
+
+
+  </body>
+
+</html>
