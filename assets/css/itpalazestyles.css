@@ -2039,7 +2039,7 @@ section.meetings-page .pagination ul li a:hover {
 
 .meet {
   /* Additional styles for the image if needed */
-  max-width: 15%; /* Optional: Ensure the image doesn't exceed its container's width */
+  max-width: 10%; /* Optional: Ensure the image doesn't exceed its container's width */
   border-radius: 10px;
 }
 
@@ -2109,7 +2109,7 @@ section.meetings-page .pagination ul li a:hover {
     width:30%;
   }
   .meet{
-    max-width: 40%;
+    max-width: 30%;
   }
 }
 
