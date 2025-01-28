@@ -1,5 +1,3 @@
-
-
 /* ---------------------------------------------
 Table of contents
 ------------------------------------------------
@@ -1967,7 +1965,7 @@ section.meetings-page .pagination ul li a:hover {
   padding: 10px;
   border-radius: 10px;
   text-align: center;
-  width: 30%; /* Adjust as needed, considering padding and border-radius */
+  width: 22%; /* Adjust as needed, considering padding and border-radius */
   margin-bottom: 10px;
   font-weight: bold;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Border shadow */
@@ -1980,7 +1978,7 @@ section.meetings-page .pagination ul li a:hover {
   padding: 10px;
   border-radius: 10px;
   text-align: center;
-  width: 30%; /* Adjust as needed, considering padding and border-radius */
+  width: 22%; /* Adjust as needed, considering padding and border-radius */
   margin-bottom: 10px;
   font-weight: bold;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Border shadow */
@@ -2317,14 +2315,14 @@ responsive
 .image-row {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   padding: 10px;
 }
 
 
 .image {
   width: 100%;
-  max-width: 360px; /* Adjust the max-width as needed */
+  max-width: 330px; /* Adjust the max-width as needed */
   height: auto;
   margin: 20px;
   border-radius: 20px;
@@ -2334,13 +2332,13 @@ responsive
 }
 
 .image:hover {
-  transform: scale(1.2); /* Move the element up by 10 pixels on hover */
+  transform: scale(1.1); /* Move the element up by 10 pixels on hover */
 }
 
 
 .imagecourse {
   width: 100%;
-  max-width: 360px; /* Adjust the max-width as needed */
+  max-width: 330px; /* Adjust the max-width as needed */
   height: auto;
   margin: 20px;
   border-radius: 20px;
@@ -2610,10 +2608,18 @@ responsive
 .currirow {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  align-content: center;
-  padding: 10px;
+  justify-content: center;
+  margin-left: 50px; /* Add margin to the left */
+  margin-right: 50px; /* Add margin to the right */
 }
+
+@media (max-width: 768px) {
+  .currirow {
+    margin-left: 10px; /* Adjust margin for responsive view */
+    margin-right: 10px; /* Adjust margin for responsive view */
+  }
+}
+
 .currisection {
   margin: 10px;
   flex: 1;
@@ -2621,9 +2627,13 @@ responsive
   border-radius: 10px;
 }
 
+.currirow table {
+  margin: 0 auto; /* Center tables horizontally */
+}
 .curritable {
     border-collapse: separate;
     border-spacing: 2px; /* Adjust spacing as needed */
+    width: 100%;
 }
 
 .curritable th, .curritable td {
@@ -2663,6 +2673,13 @@ responsive
   animation: blink 01s infinite;
 }
 
+.grade-table-container {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 100%;
+}
+
 .grade{
   color: rgb(255, 255, 255);
   font-size: 30px;
@@ -2672,6 +2689,8 @@ responsive
   padding: 10px;
   border-radius: 5px;
   font-weight: bold;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 
