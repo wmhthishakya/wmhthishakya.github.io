@@ -2322,7 +2322,7 @@ responsive
 
 .image {
   width: 100%;
-  max-width: 330px; /* Adjust the max-width as needed */
+  max-width: 280px; /* Adjust the max-width as needed */
   height: auto;
   margin: 20px;
   border-radius: 20px;
@@ -2338,7 +2338,7 @@ responsive
 
 .imagecourse {
   width: 100%;
-  max-width: 330px; /* Adjust the max-width as needed */
+  max-width: 280px; /* Adjust the max-width as needed */
   height: auto;
   margin: 20px;
   border-radius: 20px;
