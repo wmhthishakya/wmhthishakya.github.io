@@ -254,7 +254,6 @@ body {
   text-transform: uppercase;
   color: #fff;
   text-align: center;
-
 }
 /* 
 ---------------------------------------------
@@ -2771,4 +2770,10 @@ responsive
   .watch-button{
     display: inline-block;
   }
+}
+
+@media (max-width: 768px) {
+  .services {
+    margin-top: -110px;
+}
 }
